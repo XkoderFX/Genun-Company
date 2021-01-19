@@ -1,15 +1,9 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import { Menu, Toolbar } from "@material-ui/core";
+import React from "react";
+import MainMenu from "../components/layout/MainMenu";
 
 const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+        <MainMenu items={["בית", "תוצאות", "הזמנה"]} brand="גינון"></MainMenu>
+);
 
-export default IndexPage
+export default IndexPage;
