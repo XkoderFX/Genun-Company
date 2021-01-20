@@ -1,3 +1,4 @@
+import { Box } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import ImageCarousel from "../ImageCarousel";
 
@@ -13,19 +14,19 @@ const ResultsSection = () => {
     useEffect(() => {
         setImages([
             {
-                src: "/garden1.jpg",
+                src: "/images/garden1.jpg",
                 width: "1000px",
                 height: "1000px",
             },
 
             {
-                src: "/garden2.jpg",
+                src: "/images/garden2.jpg",
                 width: "1000px",
                 height: "1000px",
             },
 
             {
-                src: "/garden3.jpg",
+                src: "/images/garden3.jpg",
                 width: "1000px",
                 height: "1000px",
             },
@@ -33,9 +34,9 @@ const ResultsSection = () => {
     }, []);
 
     return (
-        <div>
+        <Box display="flex" justifyContent="center">
             <ImageCarousel images={images} />
-        </div>
+        </Box>
     );
 };
 
