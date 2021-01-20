@@ -14,7 +14,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     return (
         <>
             <Carousel>
-                {images.map((image) => (
+                {images?.map((image) => (
                     <Image
                         src={image.src}
                         width={image.width}
