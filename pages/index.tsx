@@ -1,4 +1,4 @@
-import { Box, Grid, Menu, Toolbar } from "@material-ui/core";
+import { Box, Grid, Menu, NoSsr, Toolbar } from "@material-ui/core";
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import MainMenu from "../components/layout/MainMenu";
@@ -8,11 +8,11 @@ const IndexPage = () => (
     <>
         <MainMenu items={["בית", "תוצאות", "הזמנה"]} brand="גינון"></MainMenu>
 
-        <Box my={3}>
-            <main>
+        <main>
+            <Box my={3}>
                 <ResultsSection></ResultsSection>
-            </main>
-        </Box>
+            </Box>
+        </main>
     </>
 );
 
