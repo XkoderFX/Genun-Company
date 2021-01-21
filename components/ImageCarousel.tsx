@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import Image from "next/image";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, NoSsr } from "@material-ui/core";
 
 interface ImageCarouselProps {
     images: Array<{
@@ -21,15 +21,17 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
     const classes = useStyles();
 
     return (
-        <Carousel className={classes.carousel}>
-            {images?.map((image) => (
-                <Image
-                    src={image.src}
-                    width={image.width}
-                    height={image.height}
-                ></Image>
-            ))}
-        </Carousel>
+        <NoSsr>
+            <Carousel navButtonsAlwaysVisible className={classes.carousel}>
+                {images?.map((image) => (
+                    <Image
+                        src={image.src}
+                        width={image.width}
+                        height={image.height}
+                    ></Image>
+                ))}
+            </Carousel>
+        </NoSsr>
     );
 };
 
