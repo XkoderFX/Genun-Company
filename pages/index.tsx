@@ -1,9 +1,13 @@
-import { Menu, Toolbar } from "@material-ui/core";
-import React from "react";
-import MainMenu from "../components/layout/MainMenu";
+import { Menu, Toolbar } from '@material-ui/core';
+import React from 'react';
+import About from '../components/layout/About';
+import MainMenu from '../components/layout/MainMenu';
 
 const IndexPage = () => (
-        <MainMenu items={["בית", "תוצאות", "הזמנה"]} brand="גינון"></MainMenu>
+  <>
+    <MainMenu items={['בית', 'תוצאות', 'הזמנה']} brand="גינון"></MainMenu>
+    <About />
+  </>
 );
 
 export default IndexPage;
