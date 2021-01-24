@@ -9,7 +9,7 @@ const IndexPage = () => (
         <MainMenu items={["בית", "תוצאות", "הזמנה"]} brand="גינון"></MainMenu>
         <main>
             <About />
-            <Box style={{ marginTop: "16px" }}>
+            <Box style={{ marginTop: "20px" }}>
                 <ResultsSection />
             </Box>
         </main>

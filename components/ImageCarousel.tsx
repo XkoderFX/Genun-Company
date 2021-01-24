@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
         direction: "ltr",
 
         [theme.breakpoints.up("sm")]: {
-            minWidth: "800px",
+            minWidth: "900px",
             minHeight: "800px",
         },
 
