@@ -1,0 +1,51 @@
+.box {
+  position: relative;
+  // height: 50vh;
+}
+.textBox {
+  // margin: 20px 50px;
+  position: absolute;
+  height: 35vh;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.heading {
+  font-weight: bold;
+  color: green !important;
+  font-family: 'Coda Caption';
+  text-align: center;
+}
+.bg {
+  background-image: url('../pages/images/about.jpg');
+  height: 45vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+.grid {
+  display: grid;
+  margin-top: 45px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.gridItem {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+
+.gridImg {
+  width: 70px !important;
+  height: 70px !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  padding-bottom: 10px !important;
+}
