@@ -6,10 +6,9 @@ import ResultsSection from "../components/layout/ResultsSection";
 
 const IndexPage = () => (
     <>
-        <MainMenu items={["בית", "תוצאות", "הזמנה"]} brand="גינון"></MainMenu>
         <main>
             <About />
-            <Box style={{ marginTop: "20px" }}>
+            <Box mt={3}>
                 <ResultsSection />
             </Box>
         </main>
