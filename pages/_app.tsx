@@ -9,7 +9,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider theme={theme}>
             <MainMenu
-                items={["בית", "תוצאות", "הזמנה"]}
                 brand="גינון"
             ></MainMenu>
 

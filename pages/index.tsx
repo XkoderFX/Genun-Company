@@ -1,4 +1,4 @@
-import { Box, Grid, Menu, NoSsr, Toolbar } from "@material-ui/core";
+import { Box, Grid, Menu, Toolbar } from "@material-ui/core";
 import React from "react";
 import About from "../components/layout/About";
 import MainMenu from "../components/layout/MainMenu";

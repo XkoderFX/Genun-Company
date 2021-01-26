@@ -1,22 +1,18 @@
 import { AppBar, Box, Button, Toolbar, Typography } from "@material-ui/core";
-import Link from "next/link";
 import React from "react";
-
+import NextButtonLink from "../ButtonLink";
 interface MainMenuProps {
     brand: string;
-    items: string[];
 }
 
-const MainMenu: React.FC<MainMenuProps> = ({ brand, items }) => {
+const MainMenu: React.FC<MainMenuProps> = ({ brand }) => {
     return (
         <AppBar position="static">
             <Toolbar>
                 <Typography variant="h3">{brand}</Typography>
-                {items.map((item, i) => (
-                    <Button color="inherit" key={i + Date.now()}>
-                        {item}
-                    </Button>
-                ))}
+                <NextButtonLink href="/">בית</NextButtonLink>
+                <NextButtonLink href="/#results">תוצאות</NextButtonLink>
+                <NextButtonLink href="/ordering-form">הזמנה</NextButtonLink>
             </Toolbar>
         </AppBar>
     );
