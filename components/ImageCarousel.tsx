@@ -30,8 +30,9 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({ images }) => {
 
     return (
         <Carousel navButtonsAlwaysVisible className={classes.carousel}>
-            {images?.map((image) => (
+            {images?.map((image, i) => (
                 <Image
+                    key={Date.now() + i}
                     src={image.src}
                     width={800}
                     height={800}

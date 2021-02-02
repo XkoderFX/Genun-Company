@@ -26,7 +26,7 @@ const ResultsSection = () => {
     }, []);
 
     return (
-        <Container maxWidth="xl">
+        <Container id="results" maxWidth="xl">
             <Grid container>
                 <Grid item xs={12} lg={4}>
                     <Typography variant="h5" component="h3">
@@ -66,11 +66,9 @@ const ResultsSection = () => {
                 </Grid>
 
                 <Grid item xs={12} lg={8}>
-                    <NoSsr>
-                        <Box display="flex" justifyContent="flex-end">
-                            <ImageCarousel images={images} />
-                        </Box>
-                    </NoSsr>
+                    <Box display="flex" justifyContent="flex-end">
+                        <ImageCarousel images={images} />
+                    </Box>
                 </Grid>
             </Grid>
         </Container>
